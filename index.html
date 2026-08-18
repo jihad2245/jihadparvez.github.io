@@ -13,9 +13,9 @@
   <style>
     :root {
       --purple: #6c3df5;
-      --light-purple: #eee8ff;
+      --purple-light: #eee8ff;
       --dark: #121018;
-      --text: #18171f;
+      --text: #17151f;
       --muted: #70707d;
       --white: #ffffff;
       --bg: #fbfaff;
@@ -45,7 +45,7 @@
       color: inherit;
     }
 
-    /* Background decoration */
+    /* Background */
     .circle {
       position: fixed;
       border-radius: 50%;
@@ -78,8 +78,10 @@
     nav {
       height: 85px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 50;
     }
 
     .logo {
@@ -139,11 +141,7 @@
       content: "";
       position: absolute;
       inset: 8% -8% -8% 8%;
-      background: linear-gradient(
-        135deg,
-        #e6dcff,
-        #c9b8ff
-      );
+      background: linear-gradient(135deg, #e6dcff, #c9b8ff);
       border-radius: 50%;
       z-index: -1;
     }
@@ -481,7 +479,7 @@
       font-size: 13px;
     }
 
-    /* Animations */
+    /* Scroll animation */
     .reveal {
       opacity: 0;
       transform: translateY(30px);
@@ -618,8 +616,11 @@
   <div class="circle one"></div>
   <div class="circle two"></div>
 
-  <!-- NAVBAR -->
+
+  <!-- ================= NAVBAR ================= -->
+
   <header class="container">
+
     <nav>
 
       <a href="#" class="logo">
@@ -627,28 +628,32 @@
       </a>
 
       <div class="nav-links">
+
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#achievements">Achievements</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
+
       </div>
 
       <button class="menu">☰</button>
 
     </nav>
+
   </header>
 
 
-  <!-- HERO -->
+  <!-- ================= HERO ================= -->
+
   <section class="hero container">
 
     <div class="hero-image reveal">
 
-      <!-- তোমার কালো ব্লেজারের ছবি -->
+      <!-- BLACK BLAZER PHOTO -->
       <img
-        src="assets/hero.jpg"
+        src="hero.jpg"
         alt="Jihad Parvez"
       >
 
@@ -667,15 +672,19 @@
       </h1>
 
       <div class="role">
+
         I am a
         <span class="typing" id="typing"></span>
+
       </div>
 
       <p>
+
         I’m a passionate student who loves computers,
         technology and problem solving. I want to study
         Computer Science and become a skilled Computer
         Engineer in the future.
+
       </p>
 
       <div class="buttons">
@@ -695,7 +704,8 @@
   </section>
 
 
-  <!-- ABOUT -->
+  <!-- ================= ABOUT ================= -->
+
   <section id="about" class="container reveal">
 
     <div class="section-heading">
@@ -720,11 +730,15 @@
         </h3>
 
         <p>
-          My name is Jihad Parvez. I am a student and
-          technology enthusiast. I enjoy learning about
-          computers, coding and new technologies.
+
+          My name is Jihad Parvez.
+          I am a student and technology enthusiast.
+          I enjoy learning about computers, coding
+          and new technologies.
+
           My goal is to build strong technical skills
           and become a capable Computer Engineer.
+
         </p>
 
       </div>
@@ -739,31 +753,54 @@
         <div class="education">
 
           <div class="education-item">
-            <strong>SSC — GPA 5.00</strong>
+
+            <strong>
+              SSC — GPA 5.00
+            </strong>
+
             <span>
               Debdwar Kabiband Elimia High School
             </span>
+
           </div>
 
+
           <div class="education-item">
-            <strong>PSC — GPA 5.00</strong>
+
+            <strong>
+              PSC — GPA 5.00
+            </strong>
+
             <span>
               Academic Achievement
             </span>
+
           </div>
 
+
           <div class="education-item">
-            <strong>Class 8 Scholarship</strong>
+
+            <strong>
+              Class 8 Scholarship
+            </strong>
+
             <span>
               Received scholarship in scholarship examination
             </span>
+
           </div>
 
+
           <div class="education-item">
-            <strong>IELTS</strong>
+
+            <strong>
+              IELTS
+            </strong>
+
             <span>
               IELTS completed
             </span>
+
           </div>
 
         </div>
@@ -775,7 +812,8 @@
   </section>
 
 
-  <!-- SKILLS -->
+  <!-- ================= SKILLS ================= -->
+
   <section id="skills" class="container reveal">
 
     <div class="section-heading">
@@ -795,65 +833,47 @@
 
       <div class="skill">
         <h3>HTML</h3>
-        <p>
-          Building structured and semantic websites.
-        </p>
+        <p>Building structured and semantic websites.</p>
       </div>
 
       <div class="skill">
         <h3>CSS</h3>
-        <p>
-          Creating responsive designs and animations.
-        </p>
+        <p>Creating responsive designs and animations.</p>
       </div>
 
       <div class="skill">
         <h3>MS Word</h3>
-        <p>
-          Document creation and formatting.
-        </p>
+        <p>Document creation and formatting.</p>
       </div>
 
       <div class="skill">
         <h3>MS Excel</h3>
-        <p>
-          Spreadsheet and data organization.
-        </p>
+        <p>Spreadsheet and data organization.</p>
       </div>
 
       <div class="skill">
         <h3>Problem Solving</h3>
-        <p>
-          Finding practical solutions to problems.
-        </p>
+        <p>Finding practical solutions to problems.</p>
       </div>
 
       <div class="skill">
         <h3>Teamwork</h3>
-        <p>
-          Working and leading effectively in teams.
-        </p>
+        <p>Working and leading effectively in teams.</p>
       </div>
 
       <div class="skill">
         <h3>Public Speaking</h3>
-        <p>
-          Presentation and communication skills.
-        </p>
+        <p>Presentation and communication skills.</p>
       </div>
 
       <div class="skill">
         <h3>Coding Concepts</h3>
-        <p>
-          Understanding programming fundamentals.
-        </p>
+        <p>Understanding programming fundamentals.</p>
       </div>
 
       <div class="skill">
         <h3>Computer Technology</h3>
-        <p>
-          Strong interest and knowledge of computers.
-        </p>
+        <p>Strong interest and knowledge of computers.</p>
       </div>
 
     </div>
@@ -861,7 +881,8 @@
   </section>
 
 
-  <!-- ACHIEVEMENTS -->
+  <!-- ================= ACHIEVEMENTS ================= -->
+
   <section id="achievements" class="container reveal">
 
     <div class="section-heading">
@@ -890,8 +911,11 @@
         </h3>
 
         <p>
-          Participated in three school weekend competitions
-          and led my team to first place each time.
+
+          Participated in three school weekend
+          competitions and led my team to first
+          place each time.
+
         </p>
 
       </div>
@@ -908,8 +932,10 @@
         </h3>
 
         <p>
+
           Served as a Scout Leader and developed
           leadership and teamwork skills.
+
         </p>
 
       </div>
@@ -926,8 +952,10 @@
         </h3>
 
         <p>
+
           Achieved GPA 5.00 in SSC and PSC and
           received a Class 8 scholarship.
+
         </p>
 
       </div>
@@ -937,7 +965,8 @@
   </section>
 
 
-  <!-- GALLERY -->
+  <!-- ================= GALLERY ================= -->
+
   <section id="gallery" class="container reveal">
 
     <div class="section-heading">
@@ -955,32 +984,45 @@
 
     <div class="gallery">
 
+      <!-- তোমার আপলোড করা EXACT নাম -->
+
       <div class="gallery-item">
+
         <img
-          src="assets/gallery-1.jpg"
+          src="gallery-1.jpg"
           alt="Jihad Parvez Gallery 1"
         >
+
       </div>
 
+
       <div class="gallery-item">
+
         <img
-          src="assets/gallery-2.jpg"
+          src="gallery-2.jpg"
           alt="Jihad Parvez Gallery 2"
         >
+
       </div>
 
+
       <div class="gallery-item">
+
         <img
-          src="assets/gallery-3.jpg"
+          src="gallery-3.jpg"
           alt="Jihad Parvez Gallery 3"
         >
+
       </div>
 
+
       <div class="gallery-item">
+
         <img
-          src="assets/gallery-4.jpg"
+          src="gallery-4.jpg"
           alt="Jihad Parvez Gallery 4"
         >
+
       </div>
 
     </div>
@@ -988,7 +1030,8 @@
   </section>
 
 
-  <!-- CONTACT -->
+  <!-- ================= CONTACT ================= -->
+
   <section id="contact" class="container reveal">
 
     <div class="contact-box">
@@ -1006,8 +1049,11 @@
           </h2>
 
           <p>
-            If you'd like to get in touch, you can reach
-            me through email or find me on Facebook.
+
+            If you'd like to get in touch,
+            you can reach me through email
+            or find me on Facebook.
+
           </p>
 
         </div>
@@ -1022,8 +1068,11 @@
             ✉️ mdjihadparvezjoy@gmail.com
           </a>
 
+
           <div class="contact-link">
+
             📘 Facebook: Jihad Parvez
+
           </div>
 
         </div>
@@ -1035,24 +1084,35 @@
   </section>
 
 
+  <!-- ================= FOOTER ================= -->
+
   <footer>
+
     © <span id="year"></span>
     Jihad Parvez.
     Built with passion for technology.
+
   </footer>
 
 
-  <!-- IMAGE LIGHTBOX -->
+  <!-- ================= LIGHTBOX ================= -->
+
   <div class="lightbox" id="lightbox">
 
     <button class="close" id="close">
       ×
     </button>
 
-    <img id="lightboxImg" src="" alt="Gallery Preview">
+    <img
+      id="lightboxImg"
+      src=""
+      alt="Gallery Preview"
+    >
 
   </div>
 
+
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script>
 
@@ -1071,6 +1131,7 @@
 
     const typing =
       document.getElementById("typing");
+
 
     function typeEffect() {
 
@@ -1112,12 +1173,13 @@
         typeEffect,
         deleting ? 45 : 80
       );
+
     }
 
     typeEffect();
 
 
-    /* Scroll Animation */
+    /* Scroll Reveal Animation */
 
     const observer =
       new IntersectionObserver(
@@ -1152,7 +1214,8 @@
     /* Current Year */
 
     document.getElementById("year")
-      .textContent = new Date().getFullYear();
+      .textContent =
+      new Date().getFullYear();
 
 
     /* Gallery Lightbox */
@@ -1162,6 +1225,7 @@
 
     const lightboxImg =
       document.getElementById("lightboxImg");
+
 
     document
       .querySelectorAll(".gallery-item img")
